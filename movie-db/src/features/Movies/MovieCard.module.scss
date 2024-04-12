@@ -1,0 +1,15 @@
+@use "../../styles/shared";
+
+.card {
+  margin: 1rem;
+  display: flex;
+  flex: 0 1 0;
+  flex-direction: column;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  a {
+    color: shared.$primary-color;
+  }
+}
