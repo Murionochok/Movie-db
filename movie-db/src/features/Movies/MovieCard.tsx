@@ -14,12 +14,17 @@ interface MovieCardProps {
 function MovieCard({ id, title, genre, popularity, overview }: MovieCardProps) {
   return (
     <div className={styles.card}>
-      <Link to={`/movies/:${id}`}>
-        <h1 className="movies-card__title">Title: {title}</h1>
-      </Link>
-      <h3>Genre: {genre}</h3>
-      <h3 className="movies-card__popularity">Popularity: {popularity}</h3>
-      <p className="movies-card__overview">Overview: {overview}</p>
+      <img
+        className={styles.img_template}
+        src="/Movie-Poster.jpg"
+        alt="movie template"
+      />
+      <div className={styles.description}>
+        <Link to={`/movies/:${id}`}>Title: {title}</Link>
+        <h3>Genre: {genre}</h3>
+        <h3 className={styles.popularity}>Popularity: {popularity}</h3>
+        <p className={styles.overview}>Overview: {overview}</p>
+      </div>
     </div>
   );
 }

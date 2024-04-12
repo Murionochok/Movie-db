@@ -13,3 +13,22 @@
     color: shared.$primary-color;
   }
 }
+
+.img_template {
+  max-height: 200px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.description {
+  padding: 1rem;
+
+  .overview {
+    font-size: small;
+    color: shared.$dimmed-color;
+  }
+  .popularity {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+}
