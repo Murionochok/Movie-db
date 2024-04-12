@@ -16,7 +16,7 @@ function MovieCard({ id, title, genre, popularity, overview }: MovieCardProps) {
     <div className={styles.card}>
       <img
         className={styles.img_template}
-        src="/Movie-Poster.jpg"
+        src="/Poster.jpg"
         alt="movie template"
       />
       <div className={styles.description}>

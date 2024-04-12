@@ -12,12 +12,19 @@
   a {
     color: shared.$primary-color;
   }
+  @media (max-width: 767px) {
+    margin: 0.5rem;
+  }
 }
 
 .img_template {
   max-height: 200px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+
+  @media (max-width: 374px) {
+    max-height: 160px;
+  }
 }
 
 .description {
@@ -30,5 +37,8 @@
   .popularity {
     margin-top: 0.5rem;
     font-weight: bold;
+    @media (max-width: 767px) {
+      padding: 0.5rem;
+    }
   }
 }
